@@ -1,4 +1,3 @@
-
 ---
 layout:     post
 title:      "learning_Markdown"
