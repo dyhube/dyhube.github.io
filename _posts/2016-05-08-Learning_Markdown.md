@@ -1,10 +1,16 @@
+
 ---
-layout: post
-author: Guang
-title: Learning Markdown
-category: learning
-tag: [interest]
+layout:     post
+title:      "learning_Markdown"
+subtitle:   " \"Markdown学习\""
+date:       2016-05-08 12:00:00
+author:     "Guang"
+header-img: "img/post-bg-2015.jpg"
+tags:
+    - interest
 ---
+
+
 ![1280px-Markdown-mark.svg.png](https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/1280px-Markdown-mark.svg.png "Markdown")
 
 ### **Markdown学习**
