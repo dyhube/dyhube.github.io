@@ -7,15 +7,18 @@ author:     "Guang"
 header-img: "img/post-bg-2015.jpg"
 tags:
     - 生活
+    - learning
 ---
 
 
 
-Hello_World！
+#**Hello_World！**
 
 ### 光的起点！
 
-{% highlight c %}
+
+
+{% highlight c++ %}
 using namespace std;  
 int main ()   
 {  
