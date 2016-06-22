@@ -86,16 +86,16 @@ friends: [
         title: "Welcome",
         href: "http://dyhube.github.io"
     },{
-        title: "Come",
+        title: "to",
         href: "#"
     },{
-        title: "To",
+        title: "my",
         href: "#"
     },{
-        title: "My",
+        title: "blog",
         href: "#"
     },{
-        title: "Blog",
+        title: "!",
         href: "#"
     }
 ]
