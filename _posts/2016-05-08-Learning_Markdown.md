@@ -7,6 +7,7 @@ author:     "Guang"
 header-img: "img/post-bg-2015.jpg"
 tags:
     - interest
+    - learning
 ---
 
 
@@ -16,7 +17,7 @@ tags:
 
 #### **如何添加图片：**
 
-![dian.png](/public/dian.png "点")
+![dian.png](/img/in-post/dian.png "点")
 
 #### **什么是Markdown？**
 
