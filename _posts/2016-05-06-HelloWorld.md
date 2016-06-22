@@ -15,12 +15,11 @@ Hello_World！
 
 ### 光的起点！
 
-
->
->using namespace std;  
->int main ()   
->{  
-> 	cout << "Hello world!" << endl;  
-> 	return 0;  
->}
->
+{% highlight c %}
+using namespace std;  
+int main ()   
+{  
+ 	cout << "Hello world!" << endl;  
+ 	return 0;  
+}
+{% endhighlight %}
