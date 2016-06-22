@@ -12,13 +12,14 @@ tags:
 
 
 
-#**Hello_World！**
+# **Hello_World！**
 
 ### 光的起点！
 
+就这样有了自己的博客！^_^
 
 
-{% highlight c++ %}
+{% highlight c %}
 using namespace std;  
 int main ()   
 {  
