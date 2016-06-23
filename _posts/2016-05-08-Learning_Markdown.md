@@ -11,13 +11,17 @@ tags:
 ---
 
 
-![1280px-Markdown-mark.svg.png](https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/1280px-Markdown-mark.svg.png "Markdown")
-
 ### **Markdown学习**
 
 #### **如何添加图片：**
 
+{% highlight c %}
 ![dian.png](/img/in-post/dian.png "点")
+{% endhighlight %}
+
+![dian.png](/img/in-post/dian.png "点")
+
+![1280px-Markdown-mark.svg.png](https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/1280px-Markdown-mark.svg.png "Markdown")
 
 #### **什么是Markdown？**
 
