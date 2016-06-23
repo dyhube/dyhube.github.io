@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "learning_Markdown"
+title:      "Learning_Markdown"
 subtitle:   " \"Markdown学习\""
 date:       2016-05-08 12:00:00
 author:     "Guang"
