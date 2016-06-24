@@ -25,9 +25,13 @@ tags:
 在大部分高校，ipv4一般是计流量或计时收费的，（笔者学校就是计时收费的，50元200小时网通十兆带宽）而且，由于校园的特殊性，相应的价格也比市面上宽带服务商要高。万幸的是，这些高校一般具有ipv6网络环境，并且由于国家的大力支持，普及范围广，而且不计算流量，聪明的人早就想能不能通过利用ipv6已达到免流量及无限时长上网？答案是可行的，鉴于目前公网的环境普遍是ipv4，我们可以找一台同时具有ipv4和ipv6地址的服务器，我们在校内通过ipv6访问服务器，然后服务器处理我们的访问请求以ipv4/ipv6双栈的方式代替我们访问互联网，再将数据通过ipv6反馈给我们，从而到达免流上网的目的。并且，考虑到大部分高校ipv6没有限制速度，理论上可以达到服务器出口的带宽，当然，具体取决于你们学校的ipv6出口带宽。
 
 ### **为什么用Shadowsocks？**
-配置简单，真的简单！以前看到过信息学院的学长写的一篇blog,原理是ipv6 to ipv4 从而ipv6 to ipv4网络,其实原理是一样的，只是他用了openvpn这个软件，但是感觉实现起来好难。像这样的开源支持ipv6协议的软件还是有很多的，这里就不再陈述。
+配置简单，真的简单！以前看到过信息学院的学长写的一篇[blog](http://blog.claves.me/2015/05/13/openvpn_ipv6_openwrt/"blog"),原理是ipv6 to ipv4 从而ipv6 to ipv4网络,其实原理是一样的，只是他用了openvpn这个软件，但是感觉实现起来好难。像这样的开源支持ipv6协议的软件还是有很多的，这里就不再陈述。
 
-回到原题为什么用Shadowsocks，配置简单。vps服务提供商搬瓦工现在为了迎合国人的需求现在已经预配了Shadowsocks,只需要点击以下安装就ok了。
+回到原题为什么用Shadowsocks，配置简单。vps服务提供商[搬瓦工](https://bandwagonhost.com/)现在为了迎合国人的需求现在已经预配了Shadowsocks,只需要点击以下安装就ok了。
+
+![bandwagonhost](http://upload-images.jianshu.io/upload_images/877518-ab3dea8d36104b08.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![Shadowsocks控制面板](http://upload-images.jianshu.io/upload_images/877518-26616c3b7a7e41ef.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### **适合对象**
 具有ipv6地址、ipv4流量（计时）收费贵爱折腾的大学生。不推荐打国服游戏，延迟你懂的，但对延迟没要求的游戏还是可以玩的，美服、亚服、台服随你玩。
