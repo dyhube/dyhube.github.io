@@ -1,5 +1,6 @@
 [https://dyhube.github.io](https://dyhube.github.io)
 ============
+![博客首页.png](/img/博客首页.png "博客首页")
 
 + author: `Dyhube_Guang`
 + version: `1.0.2`
