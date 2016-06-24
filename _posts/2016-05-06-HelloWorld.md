@@ -18,7 +18,6 @@ tags:
 
 就这样有了自己的博客！^_^
 
-
 {% highlight c %}
 using namespace std;  
 int main ()   

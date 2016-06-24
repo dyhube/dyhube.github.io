@@ -89,17 +89,25 @@ This is an H2
 
 Markdown 标记区块引用是使用类似 email 中用 > 的引用方式。如果你还熟悉在 email 信件中的引言部分，你  
 就知道怎么在 Markdown 文件中建立一个区块引用，那会看起来像是你自己先断好行，然后在每行的最前面加上 > ：  
-
+{% highlight c %}
+> consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+> Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+> Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+> id sem consectetuer libero luctus adipiscing.
+{% endhighlight %}
 
 > consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
 > Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
 > Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
 > id sem consectetuer libero luctus adipiscing.
-
 #### **列表**
 
 Markdown 支持有序列表和无序列表。      
 无序列表使用星号、加号或是减号作为列表标记：    
+{% highlight c %}
+* Green
+* Blue
+{% endhighlight %}
 
 * Green
 * Blue
@@ -114,32 +122,32 @@ Markdown 支持两种形式的链接语法： 行内式和参考式两种形式�
 要在网址后面，用双引号把 title 文字包起来即可，例如：   
 {% highlight c %}
 This is [an example](http://example.com/ "Title") inline link.
-
 [This link](http://example.net/) has no title attribute.
 {% endhighlight %}
-
-This is [an example](http://example.com/ "Title") inline link.
-
-[This link](http://example.net/) has no title attribute.
 
 #### **强调**
 
 Markdown 使用星号（*）和底线（_）作为标记强调字词的符号，被 * 或 _ 包围的字词会被转成用 em 标签包围    
 用两个 * 或 _ 包起来的话，则会被转成 strong 标签，例如：    
+{% highlight c %}
+`single underscores`
 
-_single underscores_
+**double asterisks**
+{% endhighlight %}
 
-*double asterisks*
+`single underscores`
+
+**double asterisks**
 
 #### **图片**
 
 很明显地，要在纯文字应用中设计一个「自然」的语法来插入图片是有一定难度的。  
 Markdown 使用一种和链接很相似的语法来标记图片，同样也允许两种样式： 行内式和参考式。  
 行内式的图片语法看起来像是：    
-
-> ![Alt text](/path/to/img.jpg)
-> ![Alt text](/path/to/img.jpg "Optional title")
-
+{% highlight c %}
+![Alt text](/path/to/img.jpg)
+![Alt text](/path/to/img.jpg "Optional title")
+{% endhighlight %}
 详细叙述如下:   
 
 {% highlight c %}
