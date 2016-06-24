@@ -39,7 +39,8 @@ tags:
 ### **准备**
 
 #### **openwrt固件路由器**
-路由器的刷机请自行Google,教程一大堆，刷机时笔者也遇到过很多问题，坚持！如果你的也是K1路由器，也要刷机，不妨看这个教程。刷机的重点是刷Shadowsocks插件，我的K1直接刷的来自恩山网友的固件，固件里已经附带了Shadowsocks。openwrt固件自取。openwrt控制面板上图。
+路由器的刷机请自行Google,教程一大堆，刷机时笔者也遇到过很多问题，坚持！如果你的也是K1路由器，也要刷机，不妨看这个[教程](http://www.right.com.cn/forum/thread-181221-1-1.html)。刷机的重点是刷`Shadowsocks插件`，我的K1直接刷的来自[恩山](http://www.right.com.cn/forum/forum.php)网友的固件，固件里已经附带了Shadowsocks。[openwrt](http://pan.baidu.com/s/1dFJO4hF)固件自取。openwrt控制面板上图。
+![openwrt](http://upload-images.jianshu.io/upload_images/877518-ed11845c67728119.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 #### **Shadowsocks+ipv6节点信息**
 因为笔者手里有台美国的vps，并且配置了Shadowsocks，所以现在拿来就直接用，老实说搭建的Shadowsocks平常很少用，之前觉得租这个vps很是浪费。但是自从寝室里有了这台全天候开机的路由器，值了！在这里我要强调一下，Shadowsocks的节点我们需要ipv6地址的，不然还是没法走校内的ipv6通道。
@@ -48,25 +49,59 @@ tags:
 
 ### **操作**  
 
-首先openwrt固件路由器登陆`192.168.1.1`，初始登录默认密码是：admin。登进去之后最好先不要对任何东西改动，按照正常路由器的配置对路由器进行拨号上网。然后选择Shadowsocks插件，选择启动。（为什么这样做呢？笔者尝试了几下，不拨号上网的话，Shadowsocks和DNS配置好了以后无法上网，最后总结，先拨号上网、再配置Shadowsocks和DNS信息）      
+首先openwrt固件路由器登陆`192.168.1.1`，初始登录默认密码是：`admin`。登进去之后最好先不要对任何东西改动，按照正常路由器的配置对路由器进行拨号上网。然后选择`Shadowsocks插件`，选择`启动`。（为什么这样做呢？笔者尝试了几下，不拨号上网的话，`Shadowsocks`和`DNS`配置好了以后无法上网，最后总结，先拨号上网、再配置Shadowsocks和DNS信息）      
 
 步骤：点击 `openwrt服务`>`Shadowsocks`，出现以下界面。
 
-### **Shadowsocks的配置**
-对Shadowsocks配置好了以后，点击下面的透明代理，选择启动。  
+![shadowsocks配置](http://upload-images.jianshu.io/upload_images/877518-8304c61781a62c95.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-对Shadowsocks配置好以后，我们的任务还没有结束，最重要的就是配置DNS信息。这里如果不配置DNS，IP地址选择ipv4的，Shadowsocks是国外的，那么通过这种方式使用Shadowsocks就是通过路由器来翻fq，在这里我就不多说了。
+### **Shadowsocks的配置**
+{% highlight c %}
+服务器ip：  
+密码：  
+服务器端口：  
+加密方式：  
+{% endhighlight %}
+对Shadowsocks配置好了以后，点击下面的透明代理，选择`启动`。  
+![透明代理启动](http://upload-images.jianshu.io/upload_images/877518-b2304b09473a3a76.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+对Shadowsocks配置好以后，我们的任务还没有结束，最重要的就是配置`DNS信息`。这里如果不配置DNS，IP地址选择ipv4的，Shadowsocks是国外的，那么通过这种方式使用Shadowsocks就是通过路由器来翻fq，在这里我就不多说了。
 
 ### **DNS的配置**
-DNS设置有两种方案，一种是利用`ChinaDNS`，还有一种直接在`DHCP/DNS`设置页面（网络>DHCP/DNS）进行填写。  
+DNS设置有两种方案，一种是利用`ChinaDNS`，还有一种直接在`DHCP/DNS`设置页面（`网络>DHCP/DNS`）进行填写。  
 
 由于本次折腾的特殊性，路由器工作在纯ipv6环境下，也就是说路由器没有ipv4的网络，但常用的DNS服务器大多是以ipv4地址方式提供的，如果使用ipv4的DNS服务器就会导致无法解析。此处用了`[2001:470:0:c0::2]`，但是很不幸，该DNS被污染了，无法解析如google，youtube一类网址，但是对国内的网站的解析很好。  
+{% highlight c %}
+2001:470:0:c0::2
+{% endhighlight %}
 
+![DNS设置](http://upload-images.jianshu.io/upload_images/877518-a819f528346ea980.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 其他的DNS最好选择Google的，相对的来说，网站解析最全面，而且还可以fq,只是一部分了，选择Google的公共DNS有一个缺点，就是像移动端的微信或者qq了，朋友圈的信息或公众号加载不出来，这是很蛋疼的事情。个人还是推荐上面的那条DNS,速度快、国内网站全面，几乎全覆盖。  
 
 下面是一些从网上找来的公共DNS，可以试验一下，说不定有什么以外的收获呢。  
+{% highlight c %}
+ordns.he.net  2001:470:20::2     74.82.42.42
 
-码字不容易，在这里非常感谢_Echo和张哲两人的post.  
+tserv1.fmt2.he.net  2001:470:0:45::2   72.52.104.74
+
+tserv1.dal1.he.net  2001:470:0:78::2   216.218.224.42
+
+tserv1.ams1.he.net  2001:470:0:7d::2   216.66.84.46
+
+tserv1.mia1.he.net  2001:470:0:8c::2   209.51.161.58
+
+tserv1.tor1.he.net  2001:470:0:c0::2   216.66.38.58
+
+ns.ipv6.uni-leipzig.de  2001:638:902:1::10   139.18.25.34
+{% endhighlight %}
+### **Google Public DNS**
+{% highlight c %}
+google-public-dns-a.google.com  2001:4860:4860::8888   8.8.8.8
+
+google-public-dns-b.google.com  2001:4860:4860::8844   8.8.4.4
+{% endhighlight %}
+
+码字不容易，在这里非常感谢[_Echo](http://www.jianshu.com/p/6559d6e4e7ab)和[张哲](https://www.zhangzhe.info/2016/03/openwrt-shadowsocks-ipv6/)两人的post.  
 
 + Author: `Dyhube_Guang`
 
