@@ -106,4 +106,5 @@ google-public-dns-b.google.com  2001:4860:4860::8844   8.8.4.4
 
 + Update: `2016-05-09`
 
+原载于[简书](http://www.jianshu.com/p/4d44172f1a5b)    
 *转载请说明！*
