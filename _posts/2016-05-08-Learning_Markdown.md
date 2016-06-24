@@ -90,9 +90,9 @@ This is an H2
 Markdown 标记区块引用是使用类似 email 中用 > 的引用方式。如果你还熟悉在 email 信件中的引言部分，你  
 就知道怎么在 Markdown 文件中建立一个区块引用，那会看起来像是你自己先断好行，然后在每行的最前面加上 > ：  
 {% highlight c %}
-> consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
-> Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-> Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+> consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.  
+> Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.  
+> Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse     
 > id sem consectetuer libero luctus adipiscing.
 {% endhighlight %}
 
@@ -100,6 +100,7 @@ Markdown 标记区块引用是使用类似 email 中用 > 的引用方式。如�
 > Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
 > Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
 > id sem consectetuer libero luctus adipiscing.
+
 #### **列表**
 
 Markdown 支持有序列表和无序列表。      
@@ -122,6 +123,7 @@ Markdown 支持两种形式的链接语法： 行内式和参考式两种形式�
 要在网址后面，用双引号把 title 文字包起来即可，例如：   
 {% highlight c %}
 This is [an example](http://example.com/ "Title") inline link.
+
 [This link](http://example.net/) has no title attribute.
 {% endhighlight %}
 
