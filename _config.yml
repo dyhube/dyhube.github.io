@@ -1,6 +1,6 @@
 # Site settings
 title: Dyhube_Guang
-title-site: Dyhube_Guang
+title-site: Guang|blog
 SEOTitle: Guang Blog|光
 header-img: img/home-bg.jpg
 email: guangniu7@gmail.com
@@ -12,7 +12,7 @@ baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 # SNS settings
-RSS: false
+RSS: true
 weibo_username:     Guang_Niu
 #zhihu_username:     dyrrou
 github_username:    dyhube
