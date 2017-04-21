@@ -24,9 +24,6 @@ tags:
 <link href='https://www.hanyi.studio/WebFonts/C3DB971E-443B-4D37-887D-530EE441EB6B/201704/css/4E738EFEF4ACAB7D.css' rel='stylesheet' type='text/css'/>
 <div class="css4E738EFEF4ACAB7D">二十四桥明月夜</div>
 
-<link href='https://www.hanyi.studio/WebFonts/C3DB971E-443B-4D37-887D-530EE441EB6B/201704/css/4E738EFEF4ACAB7D.css' rel='stylesheet' type='text/css'/>
-<div class="css4E738EFEF4ACAB7D">你好</div>
-
 {% highlight c %}
 using namespace std;  
 int main ()   
