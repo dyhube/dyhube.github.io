@@ -1,6 +1,6 @@
 ﻿---
 layout:     post
-title:      "VPS install Transmission & onekey script for PT "
+title:      "VPS install Transmission & onekey script for PT"
 subtitle:   "VPS一键安装Transmission"
 date:       2018-03-21 12:00:00
 author:     "Guang"
@@ -9,6 +9,7 @@ tags:
     - Transmission
 	- PT
 ---
+
 ### 1
 
 执行如下代码
@@ -42,6 +43,6 @@ wget --no-check-certificate -qO '/tmp/OneKeyForPT.sh' 'https://moeclub.org/attac
 ```shell
 bash /tmp/OneKeyForPT.sh -L 'ip地址' -U 'ID' -P 'password'
 ```
----
+=====
 注：在第四步中需要修改`ip地址`，也就是服务器的ip地址，设置登陆`ID`和`密码`，
----
+=====
