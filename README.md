@@ -11,4 +11,4 @@
 ============
 
 
-# The Blog made by Dyhube_Guang.
+# The Blog made by Guang.
