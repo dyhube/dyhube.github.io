@@ -1,4 +1,4 @@
-﻿---
+---
 layout:     post
 title:      "VPS install Transmission & onekey script for PT"
 subtitle:   "VPS一键安装Transmission"
