@@ -1,4 +1,4 @@
-﻿[https://dyhube.github.io](https://dyhube.github.io)
+﻿[https://blog.glgoo.xyz](https://blog.glgoo.xyz)
 ============
 ![博客首页.png](/img/博客首页.png "博客首页")
 
