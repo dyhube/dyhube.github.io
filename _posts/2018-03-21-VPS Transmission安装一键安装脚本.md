@@ -1,6 +1,6 @@
 ﻿---
 layout:     post
-title:      "VPS installs Transmission & onekey for PT "
+title:      "VPS install Transmission & onekey script for PT "
 subtitle:   "VPS一键安装Transmission"
 date:       2018-03-21 12:00:00
 author:     "Guang"
