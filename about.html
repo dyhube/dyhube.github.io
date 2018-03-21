@@ -6,14 +6,8 @@ header-img: "img/about-bg.jpg"
 ---
 
 
-<!-- Language Selector -->
-<select onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
-    <option value="0" selected> 中文 Chinese </option>
-    <option value="1"> 英语 English </option>
-</select>
 
-<!-- Chinese Version -->
-<div class="zh post-container">
+
     <blockquote>
       <li>走好脚下每一步，不留遗憾。</li>
     </blockquote>
@@ -21,87 +15,19 @@ header-img: "img/about-bg.jpg"
     <h2>Me·Guang</h2>
 
     <ul>
-      <li>热爱着文学、音乐、运动的苦逼力学汪。</li>
+	## 关于
+      <li>你所看到的是牛光的博客，记录转瞬即逝的人huo事···</li>
 
-      <li>爱着亲人，爱着朋友，爱着~</li>
-
-      <li>发自内心</li>
     </ul>
     <hr />
+## 作者
 
-    Blog：   <a href="http://blog.glgoo.xyz/">http://blog.glgoo.xyz/</a><br />
+	西南某211学生，力学在读，热爱谈不上，谋生罢了！
+	对计算机情有独钟
+	
+    有问题联系：`max.niu@my.swjtu.edu.cn`
 
     <hr />
-
-
-</div>
-
-<!-- English Version -->
-<div class="en post-container">
-    <blockquote>
-
-    </blockquote>
-
-
-    </p>
-
-</div>
-
-<!-- Handle Language Change -->
-<script type="text/javascript">
-    var $zh = document.querySelector(".zh");
-    var $en = document.querySelector(".en");
-    function onLanChange(index){
-        if(index == 0){
-            $zh.style.display = "block";
-            $en.style.display = "none";
-        }else{
-            $en.style.display = "block";
-            $zh.style.display = "none";
-        }
-    }
-    onLanChange(0);
-</script>
-
-
-
-
-
-{% if site.duoshuo_username %}
-<!-- 多说评论框 start -->
-<div class="comment">
-    <div class="ds-thread"
-    {% if site.duoshuo_username == "huxblog" %}
-        data-thread-id="1187623191091085319"
-    {% else %}
-        data-thread-key="{{site.duoshuo_username}}/about"
-    {% endif %}
-
-    data-title="{{page.title}}"
-    data-url="{{site.url}}/about/"></div>
-</div>
-<!-- 多说评论框 end -->
-
-<!-- Duoshuo hacking -->
-<input id="dsUser" type="hidden" value="{{site.duoshuo_username}}"  />
-
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-    // dynamic User hacking by Hux
-    var _user = document.getElementById('dsUser').value;
-    // duoshuo comment query.
-    var duoshuoQuery = {short_name: _user };
-    (function() {
-        var ds = document.createElement('script');
-        ds.type = 'text/javascript';ds.async = true;
-        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-        ds.charset = 'UTF-8';
-        (document.getElementsByTagName('head')[0]
-         || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-</script>
-<!-- 多说公共JS代码 end -->
-{% endif %}
 
 
 {% if site.disqus_username %}
