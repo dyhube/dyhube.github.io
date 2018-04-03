@@ -81,19 +81,10 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 # Friends
 friends: [
     {
-        title: "http://blog.glgoo.xyz",
+        title: "Guang",
         href: "http://blog.glgoo.xyz"
     },{
-        title: "http://blog.glgoo.xyz",
-        href: "http://blog.glgoo.xyz"
-    },{
-        title: "http://blog.glgoo.xyz",
-        href: "http://blog.glgoo.xyz"
-    },{
-        title: "http://blog.glgoo.xyz",
-        href: "http://blog.glgoo.xyz"
-    },{
-        title: "http://blog.glgoo.xyz",
+        title: "glgoo",
         href: "http://blog.glgoo.xyz"
     }
 ]
